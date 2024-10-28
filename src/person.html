@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile Image</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card_main">
+      <div class="card">
+        <div class="user-info">
+          <h2>User Info</h2>
+          <div class="icon">
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-video"></i>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="img-container">
+            <img id="profileImg" src="./img/mirzohid.jpg" alt="User Image" />
+            <label for="imgUpload" class="edit-icon">
+              <i class="fa-solid fa-pen"></i>
+            </label>
+            <input
+              type="file"
+              id="imgUpload"
+              accept="image/*"
+              style="display: none"
+            />
+          </div>
+          <div class="name">
+            <h2>Mirzohid Avazbekov</h2>
+            <p>last seen just now</p>
+          </div>
+        </div>
+        <div class="user_main">
+          <i class="fa-solid fa-circle-info"></i>
+          <div class="user_number">
+            <a href="998933338877">+998 90 909 90 90</a>
+            <p>mobile</p>
+          </div>
+        </div>
+        <div class="user_name">
+          <a href="@if_selenophile">@if_selenophile</a>
+          <p>username</p>
+        </div>
+        <div class="sendd">
+          <a class="send" href="index.html">SEND MESSAGE</a>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script src="./js/person.js"></script>
+  </body>
+</html>

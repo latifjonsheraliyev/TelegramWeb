@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <!-- <h1 class="text-3xl font-bold underline">Hello world!</h1> -->
+    <section
+      class="bg-[url('./img/Desktop.png')] h-[100vh] bg-no-repeat bg-cover flex items-center justify-center"
+    >
+      <div
+        class="bg-[rgb(33,33,33)] w-[300px] px-4 py-10 text-white rounded-lg"
+      >
+        <form
+          id="form_password"
+          class="flex items-center justify-center flex-col w-full"
+        >
+          <input
+            id="password"
+            type="password"
+            maxlength="4"
+            placeholder="Enter your passcode"
+            class="w-full border-[#5B5B5A] bg-transparent outline-none border-[1px] py-3 px-2 rounded-lg"
+          />
+          <button
+            disabled
+            id="btn"
+            class="w-full rounded-lg bg-[#544A81] my-5 py-3"
+          >
+            NEXT
+          </button>
+        </form>
+        <p>Log out if you don't remember your passcode</p>
+      </div>
+    </section>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

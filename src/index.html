@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favocon.webp" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Telegram</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div style="cursor: pointer" class="header__Left">
+          <i class="fa-solid fa-angle-left"></i>
+          <p>Chats</p>
+          <button id="lock"><i class="fa-solid fa-lock-open"></i></button>
+        </div>
+        <div class="header__middle">
+          <h3>Mirzohid Avazbekov</h3>
+          <p>last seen just now</p>
+        </div>
+        <div class="header__right flex gap-5">
+          <button id="logout" class="text-white text-2xl">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </button>
+        <a href="person.html">  <img
+            style="
+              width: 50px;
+              height: 50px;
+              border-radius: 100%;
+              cursor: pointer;
+            "
+            class="img_user"
+            src="./img/sarvar.jpg"
+            alt=""
+          /></a>
+          <label class="edit" for="file">
+            <i class="fa-solid fa-photo-film"></i>
+          </label>
+          <input class="file" id="file" type="file" />
+        </div>
+      </div>
+    </header>
+
+    <div class="all">
+      <div class="container">
+        <div class="all__message">
+          <div class="massage__div"></div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper_item">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <button class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__all">
+          <i class="fa-solid fa-paperclip"></i>
+          <form class="form">
+            <input
+              id="input__text__For__sarvar"
+              type="text"
+              placeholder="Message"
+            />
+            <button class="sendBtn">send</button>
+          </form>
+
+          <i class="fa-solid fa-microphone"></i>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/swiper.js"></script>
+  </body>
+</html>
